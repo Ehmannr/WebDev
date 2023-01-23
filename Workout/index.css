@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .12em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+:root {
+    --light_green: #014b1354;
+    --light_blue: #00509b42;
+    --yellow: #f8be52;
+    --light_Yellow: #fbcf86;
+    --dark_Blue: #012999;
+    --text: #f1e5c0;
+    --text_op: #f1e5c0a9;
+
+}
+
+h1,h2,h3,h4,h5,p {
+    color: var(--text);
+}
+
+a {
+    color: var(--light_Yellow);
+}
+
+#main_wrapper {
+    background-color: var(--light_green);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: flex !important;
+    height: 100vh;
+
+}
+
+#main_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.etown.edu/etcsandbox/kyle-test/images/images-cca/homepage-stats-lineart-wave1.png);
+    background-size: cover;
+    opacity: .2;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#main_Text {
+
+    background-color: var(--light_blue);
+    margin: auto;
+    width: 50%;
+
+}
+
+.title {
+    color: var(--text)
+}
+
+.sub_Text {
+    color: var(--text_op);
+}
+
+#login_form {
+    margin: auto;
+    min-width: fit-content;
+    max-width: 20em;
+    border: var(--yellow) 4px solid;
+    z-index: 2;
+}
+
+#username_label {
+    color: var(--text);
+    margin: 2% 8%;
+}
+
+#username_Login {
+    margin: 0% 8%;
+    width: 70%;
+    height: 40px;
+
+}
+
+#password_label {
+    color: var(--text);
+    margin: 2% 8%;
+}
+
+#password_Login {
+    margin-left: 0% 8%;
+    width: 70%;
+    height: 40px;
+}
+
+#forgot_pass {
+    font-size: small;
+}
+
+#login_Button {
+
+    background-image: linear-gradient(to left, var(--yellow), var(--light_Yellow));
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin: 12%;
+    align-items: center;
+}
