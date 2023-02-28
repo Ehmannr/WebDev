@@ -42,7 +42,7 @@ a {
     left: 0%;
     width: 100%;
     height: 100%;
-    background-image:url(/Workout/Pictures/Wave1.png);
+    background-image:url(/Pictures/Wave1.png);
     opacity: .2;
     overflow: hidden;
     z-index: -1;
