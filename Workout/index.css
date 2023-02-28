@@ -50,10 +50,9 @@ a {
 }
 
 #main_Text {
-
     background-color: var(--light_blue);
     margin: auto;
-    width: 50%;
+    max-width: 5%;
 
 }
 
